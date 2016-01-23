@@ -1,0 +1,98 @@
+
+/* ==========================================================================
+   Typo
+   ========================================================================== */
+
+
+
+
+
+
+/* Sets up that Base 10 stuff  1rem = 10px
+   ========================================================================== */
+html {
+  font-size: 62.5%;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+
+/* Font-Family
+   ========================================================================== */
+body 		{
+  font-family: "jaf-lapture-display",serif;
+  font-weight: 400;
+ }
+
+
+h2, 
+.h2 { 
+	font-family: "jaf-lapture",serif;
+  font-style: normal;
+  font-weight: 700;
+	letter-spacing: 2px;
+
+  color: $white;
+}
+
+.other-venues {
+  font-weight: 700;
+}
+
+.visit-website { 
+  font-weight: 700;
+  color: $ll-gray;
+}
+
+
+
+
+
+/* Font-Size
+   ========================================================================== */
+body 				      {  @include font-size(1.5); }
+
+h1,.h1            {  @include font-size(1.6); }
+
+h2,
+.h2,       
+h3,
+.h3               {  @include font-size(1.6); }
+
+.description__rect { @include font-size(1.2); }
+
+.other-venues { @include font-size(2.4); }
+
+
+
+
+
+
+
+/* Text-Color
+   ========================================================================== */
+html { color: $html-text-color; }
+
+
+
+
+
+
+
+
+/* Margins
+   ========================================================================== */
+p { margin-top: 1em; }
+
+
+
+
+/* Links
+   ========================================================================== */
+a { text-decoration: none; }
+

@@ -1,0 +1,169 @@
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+/* Container
+   ========================================================================== */
+.container { max-width: $max-width; }
+
+
+
+
+
+/* Header
+   ========================================================================== */
+.header { 
+	max-width: $small-max-width; 
+	padding-top: $xxxl-pad;
+}
+
+
+.description { 
+	margin-top: $xxxl-pad; 
+	margin-bottom: $l-pad;
+}
+.description__rect { 
+	padding: $s-pad;
+	background-color: $l-gray;
+	width: 95%;
+	background: url('../images/texture.png');
+}
+
+
+@include min-screen(43.75em) {
+	.description { border-top: 1px solid $l-gray; }
+	.description__rect {
+		width: 530px;
+		padding: $m-pad; 
+		margin-top: -2em; 
+	}
+}
+
+
+
+
+
+/* Brighton - London - Cornwall
+   ========================================================================== */
+.container__one { width: 80%; }
+
+@include min-screen(25em) {
+	.container__one { width: 100% }	
+}
+
+.hotel-box {
+	background-color: $white;
+	padding: $m-pad $s-pad $s-pad $s-pad;
+	margin: $m-pad;
+}
+
+@include min-screen(25em) {
+	.hotel-box {
+		width: 310px;
+		height: 410px; 
+	}	
+}
+
+
+@include min-screen(73.75em) {
+	.hotel-box {
+		width: 360px;
+		height: 452px; 
+	}	
+}
+
+@include min-screen(75em) {
+	.hotel-box:hover {
+		box-shadow: 0 0 4px $l-gray;
+	}	
+}
+
+.hotel-box__p { 
+	padding: $s-pad; 
+	color: $gray;
+}
+
+
+
+
+
+/* Other Venues
+   ========================================================================== */
+.other-venues { 
+	margin-top: $xl-pad;
+	margin-bottom: $m-pad;
+	padding-bottom: $s-pad;
+}
+
+@include min-screen(28.125em) {
+	.other-venues {
+		width: 270px; 
+	}	
+}
+
+
+/* Media Obj - Other Venues
+   ========================================================================== */
+.container__two { margin-bottom: $xl-pad; }
+
+.media-obj { 
+	width: 90%;
+	margin: $m-pad; 
+}
+.media-obj__img { margin-right: $m-pad; }
+
+.media-obj__body a:hover,
+.media-obj__body a:focus,
+.media-obj__body a:active { text-decoration: underline; }
+
+@include min-screen(42.5em) {
+	.media-obj {
+		width: 310px;
+	}
+
+	.media-obj__body {
+		height: 185px; 
+		padding-bottom: $xxl-pad; 
+	}
+
+	.visit-website {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}	
+}
+
+@include min-screen(73.75em) {
+	.media-obj {
+		width: 360px; 
+	}	
+}
+
+
+
+
+
+
+
+
+
+/* Footer
+   ========================================================================== */
+
+.footer {
+	padding-top: $l-pad;
+	padding-bottom: $xl-pad;
+  background-color: $deep-blue;
+  color: $footer-text-color; 
+}
+
+.footer a:hover,
+.footer a:focus,
+.footer a:active { text-decoration: underline; }
+
+.mail { margin-top: $s-pad; }
+.mail a { color: $footer-text-color; }
+

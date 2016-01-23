@@ -1,0 +1,123 @@
+
+/* =====================
+   Global Rules
+   ===================*/
+
+
+
+
+/* Remove Margins
+   ========================================================================== */
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+
+
+
+
+
+/* Box-Sizing
+   ========================================================================== */
+* { box-sizing: border-box; }
+
+
+
+/* Clean Lists
+   ========================================================================== */
+ol,
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+
+
+
+/* BrowseHappy
+   ========================================================================== */
+
+.browsehappy {
+  margin:0;
+  background:$l-gray;
+  text-align:center
+}
+
+.browsehappy a{
+  text-decoration:underline
+}
+
+
+
+/* Selected text
+   ========================================================================== */
+::selection {
+  background:$l-gray;
+  text-shadow: none
+}
+
+
+
+
+
+
+
+
+/* html
+   ========================================================================== */
+html { 
+  color: $html-text-color;
+  background-color: $deep-blue; 
+}
+
+
+
+/* Body
+   ========================================================================== */
+body { 
+  border-top: 10px solid $deep-blue;
+  background-color: $bgcolor;
+  background-image: url('../images/body-background.gif');
+}
+
+
+
+/* Images
+   ========================================================================== */
+img { 
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+
+
+/* Border-Top and Border-Bottom
+   ========================================================================== */
+.border-t {
+  border-top: 1px solid $l-gray;
+}
+
+.border-b {
+  border-bottom: 1px solid $l-gray;
+}
+
+
+/* Btn
+   ========================================================================== */
+.btn { padding: $s-pad $l-pad $s-pad 0; }
+
+
+
